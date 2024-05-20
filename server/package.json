@@ -4,7 +4,7 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./bin/www",
+    "dev": "nodemon ./src/server.ts",
     "start": "node ./bin/www",
     "build": "yarn --ignore-engines && npx tsc"
   },
@@ -16,5 +16,10 @@
     "firebase-admin": "^12.0.0",
     "moment": "^2.30.1",
     "stripe": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
